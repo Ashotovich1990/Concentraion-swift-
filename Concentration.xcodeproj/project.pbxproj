@@ -12,6 +12,8 @@
 		E6BE3DD02344D22F008C9689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6BE3DCE2344D22F008C9689 /* Main.storyboard */; };
 		E6BE3DD22344D230008C9689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BE3DD12344D230008C9689 /* Assets.xcassets */; };
 		E6BE3DD52344D230008C9689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6BE3DD32344D230008C9689 /* LaunchScreen.storyboard */; };
+		E6BE3DDD2346186F008C9689 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE3DDC2346186F008C9689 /* Concentration.swift */; };
+		E6BE3DDF23461931008C9689 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE3DDE23461931008C9689 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E6BE3DD12344D230008C9689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6BE3DD42344D230008C9689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6BE3DD62344D230008C9689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6BE3DDC2346186F008C9689 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Concentration.swift; path = Concentration/Concentration.swift; sourceTree = "<group>"; };
+		E6BE3DDE23461931008C9689 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Concentration/Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,8 @@
 		E6BE3DBE2344D22F008C9689 = {
 			isa = PBXGroup;
 			children = (
+				E6BE3DDC2346186F008C9689 /* Concentration.swift */,
+				E6BE3DDE23461931008C9689 /* Card.swift */,
 				E6BE3DC92344D22F008C9689 /* Concentration */,
 				E6BE3DC82344D22F008C9689 /* Products */,
 			);
@@ -137,6 +143,8 @@
 			files = (
 				E6BE3DCD2344D22F008C9689 /* ViewController.swift in Sources */,
 				E6BE3DCB2344D22F008C9689 /* AppDelegate.swift in Sources */,
+				E6BE3DDD2346186F008C9689 /* Concentration.swift in Sources */,
+				E6BE3DDF23461931008C9689 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
