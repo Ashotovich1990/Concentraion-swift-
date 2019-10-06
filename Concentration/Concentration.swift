@@ -8,23 +8,13 @@
 
 import Foundation
 
-class Concentration {
+struct Concentration {
     
-    var cards = Array<Card>()
+    private(set) var cards = Array<Card>()
     
     var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
-            var cardIndex: Int?
-            for flipDownIndex in cards.indices {
-                if cards[flipDownIndex].isFaceUp {
-                    if cardIndex == nil {
-                        cardIndex = flipDownIndex;
-                    } else {
-                        return nil
-                    }
-                }
-            }
-            return cardIndex
+            return cards.indices.filter { cards[$0].isFaceUp}.oneAndOnly
         }
         set {
             for index in cards.indices {
@@ -42,10 +32,10 @@ class Concentration {
         cards.shuffle()
     }
     
-    func chooseCard(at index: Int) {
+    mutating func chooseCard(at index: Int) {
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
-                if cards[matchIndex].identifier == cards[index].identifier {
+                if cards[matchIndex] == cards[index] {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                 }
@@ -57,3 +47,8 @@ class Concentration {
     }
 }
 
+extension Collection {
+    var oneAndOnly: Element? {
+        return count == 1 ? first : nil
+    }
+}
